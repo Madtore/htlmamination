@@ -39,18 +39,24 @@
             width: 10%;
             top: 55.8%;
             left: 46%;
-            z-index: 51;
-            -webkit-animation: 5s linear infinite;
+            z-index: 151;
+            -webkit-animation: bobmove 40s linear infinite;
         }
 
         @-webkit-keyframes bobmove {
-            99% {
-                opacity: 1;
+            0% {
+                transform: scale(1);
+            }
+
+            50%{
+               top: 65.8%;
+               transform: scale(3);
             }
 
             100% {
-                left: 100%;
-                opacity: 0;
+                top: 75.8%;
+                transform: scale(10);
+                
 
             }
         }
@@ -273,32 +279,142 @@
             position: absolute;
             width: 5%;
             top: 10%;
-            left: -50%;
+            left: -10%;
             z-index: 5;
-            -webkit-animation: pez2move 15s linear infinite;
+            -webkit-animation: pez2move linear 15s infinite;
         }
-
 
         @-webkit-keyframes pez2move {
             0% {
-                top: 10%;
-                left: -50%;
+                top: 10%;      
             }
 
             50% {
-                left: 30%;
-                top: 60%;
-                transform: rotate(-180deg);
+                top: 30%;   
             }
-
             100% {
-                left: 30%;
                 top: -10%;
-                transform: rotate(-90deg);
+                left: 60%;
             }
         }
 
-        #pez1 {
+        #pez3{
+            position: absolute;
+            width: 5%;
+            top: 10%;
+            left: -60%;
+            z-index: 5;
+            -webkit-animation: pez3move linear 20s infinite;
+        }
+
+        @-webkit-keyframes pez3move {
+            0% {
+                top: 10%;      
+            }
+
+            50% {
+                top: 30%;   
+            }
+            100% {
+                top: -20%;
+                left: 60%;
+            }
+        }
+
+        #pez4{
+            position: absolute;
+            width: 5%;
+            top: 10%;
+            left: -60%;
+            z-index: 5;
+            -webkit-animation: pez4move linear 25s infinite;
+        }
+
+        @-webkit-keyframes pez4move {
+            0% {
+                top: 20%;      
+            }
+
+            50% {
+                top: 40%;   
+            }
+            100% {
+                top: -10%;
+                left: 50%;
+            }
+        }
+
+        #pez5{
+            position: absolute;
+            width: 5%;
+            top: 10%;
+            left: -40%;
+            z-index: 5;
+            -webkit-animation: pez5move linear 15s infinite;
+        }
+
+        @-webkit-keyframes pez5move {
+            0% {
+                top: 30%;      
+            }
+
+            50% {
+                top: 50%;   
+            }
+            100% {
+                top: -20%;
+                left: 70%;
+            }
+        }
+
+        #pez6{
+            position: absolute;
+            width: 5%;
+            top: 10%;
+            left: -40%;
+            z-index: 5;
+            -webkit-animation: pez6move linear 20s infinite;
+        }
+
+        @-webkit-keyframes pez6move {
+            0% {
+                top: 40%;      
+            }
+
+            50% {
+                top: 30%;   
+            }
+            100% {
+                top: -30%;
+                left: 90%;
+            }
+        }
+
+        #pez7{
+            position: absolute;
+            width: 5%;
+            top: 10%;
+            left: -40%;
+            z-index: 5;
+            -webkit-animation: pez7move linear 40s infinite;
+        }
+
+        @-webkit-keyframes pez7move {
+            0% {
+                top: 10%;      
+            }
+
+            50% {
+                top: 20%;   
+            }
+            100% {
+                top: -30%;
+                left: 90%;
+            }
+        }
+
+
+        #pezpajaso1 {
             position: absolute;
             width: 10%;
             top: 15%;
@@ -336,6 +452,45 @@
             }
 
         }
+        #pezpajaso2 {
+            position: absolute;
+            width: 10%;
+            top: 15%;
+            left: -10%;
+            z-index: 6;
+            -webkit-animation: pezpajaso2move 15s linear infinite;
+        }
+
+
+        @-webkit-keyframes pezpajaso2move {
+            0% {
+                top: 15%;
+                left: 110%;
+                transform: scaleX(-1);
+            }
+            
+            48%{
+                transform: scaleX(-1);
+            }
+            50% {
+                top: 15%;
+                left: 50%;
+                transform: scaleX(-1);
+            }
+
+            51%{
+                transform: scaleX(1);
+            }
+
+
+
+            100% { 
+                top: 15%;
+                left: 110%;
+                transform: scaleX(1);
+            }
+
+        }
     </style>
 </head>
 
@@ -350,8 +505,14 @@
     <img id="medusa5" src="medusa.webp">
     <img id="patricio" src="Patricio_Estrella_de_Bob_Esponja.webp" alt="">
     <img id="casa_piña" src="casa_piña.png" alt="">
-    <img id="pez1" src="pez.gif" alt="">
-    <img id="pez2" src="pez2.gif" alt="">
+    <img id="pezpajaso1"  src="pez.gif">
+    <img id="pezpajaso2"  src="pez.gif">
+    <img id="pez2"  src="pez2.gif">
+    <img id="pez3"  src="pez2.gif">
+    <img id="pez4"  src="pez2.gif">
+    <img id="pez5"  src="pez2.gif">
+    <img id="pez6"  src="pez2.gif">
+    <img id="pez7"  src="pez2.gif">
 
 </body>
 
