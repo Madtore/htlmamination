@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pezera</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(dfynwfd-9fffd7d0-581a-4407-8d7e-0f5cc7a1039a.png);
+            background-size: 100%, 100%;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        #casa_piña {
+            position: absolute;
+            width: 18%;
+            top: 10%;
+            left: 45%;
+            z-index: 10;
+            -webkit-animation: cangrejomove 5s linear infinite;
+        }
+
+        #cangrejo {
+            position: absolute;
+            width: 10%;
+            top: 55.8%;
+            left: 46%;
+            z-index: 50;
+            -webkit-animation: cangrejomove 5s linear infinite;
+        }
+
+        #bob-esponja {
+            position: absolute;
+            width: 10%;
+            top: 55.8%;
+            left: 46%;
+            z-index: 51;
+            -webkit-animation: 5s linear infinite;
+        }
+
+        @-webkit-keyframes bobmove {
+            99% {
+                opacity: 1;
+            }
+
+            100% {
+                left: 100%;
+                opacity: 0;
+
+            }
+        }
+
+        #patricio {
+            position: absolute;
+            width: 5%;
+            top: 55.8%;
+            left: 46%;
+            z-index: 53;
+            -webkit-animation: cangrejomove 5s linear infinite;
+        }
+
+
+        #medusa1 {
+            position: absolute;
+            width: 5%;
+            top: 40%;
+            left: 50%;
+            z-index: 1;
+            -webkit-animation: medusa1move 5s linear infinite;
+        }
+
+
+        @-webkit-keyframes medusa1move {
+            0%{
+                top: 40%;
+                left: 50%;
+                
+            }
+
+            10%,30%,51%,70%,90%{
+                transform: scale(0.7, 1.5);
+            }
+
+            20%,40%,60%,80%,100%{
+                transform: scale(1.5, 1);
+            }
+            
+            50%{
+                left: 20%;
+                top:20%;
+                
+                
+            }
+
+            100%{
+                top:-10%;
+                left:10%;
+                transform: scale(1.5, 1);
+            }
+
+        }
+
+    
+
+        #medusa2 {
+            position: absolute;
+            width: 5%;
+            top: 40%;
+            left: 50%;
+            z-index: 2;
+            -webkit-animation: medusa2move 5s linear infinite;
+        }
+
+
+        @-webkit-keyframes medusa2move {
+            0%{
+                top: 40%;
+                left: 50%;
+                
+            }
+
+            10%,30%,51%,70%,90%{
+                transform: scale(0.7, 1.5);
+            }
+
+            20%,40%,60%,80%,100%{
+                transform: scale(1.5, 1);
+            }
+            
+            50%{
+                left: 80%;
+                top:20%;
+                
+                
+            }
+
+            100%{
+                top:-10%;
+                left:80%;
+                transform: scale(1.5, 1);
+            }
+
+        }
+
+
+        #medusa3 {
+            position: absolute;
+            width: 5%;
+            top: 40%;
+            left: 50%;
+            z-index: 3;
+            -webkit-animation: medusa3move 9s linear infinite;
+        }
+
+
+        @-webkit-keyframes medusa3move {
+            0%{
+                top: 40%;
+                left: 50%;
+                
+            }
+
+            10%,30%,51%,70%,90%{
+                transform: scale(0.7, 1.5);
+            }
+
+            20%,40%,60%,80%,100%{
+                transform: scale(1.5, 1);
+            }
+            
+            50%{
+                left: 80%;
+                top:20%;
+                
+                
+            }
+
+            100%{
+                top:-10%;
+                left:80%;
+                transform: scale(1.5, 1);
+            }
+
+        }
+
+        #medusa4 {
+            position: absolute;
+            width: 5%;
+            top: 40%;
+            left: 50%;
+            z-index: 4;
+            -webkit-animation: medusa4move 9s linear infinite;
+        }
+
+
+        @-webkit-keyframes medusa4move {
+            0%{
+                top: 40%;
+                left: 50%;
+                
+            }
+
+            10%,30%,51%,70%,90%{
+                transform: scale(0.7, 1.5);
+            }
+
+            20%,40%,60%,80%,100%{
+                transform: scale(1.5, 1);
+            }
+            
+            50%{
+                left: 20%;
+                top:20%;
+                
+                
+            }
+
+            100%{
+                top:-10%;
+                left:10%;
+                transform: scale(1.5, 1);
+            }
+
+        }
+
+
+        #medusa5 {
+            position: absolute;
+            width: 5%;
+            top: 40%;
+            left: 50%;
+            z-index: 4;
+            -webkit-animation: medusa5move 9s linear infinite;
+        }
+
+
+        @-webkit-keyframes medusa5move {
+            0%{
+                top: 40%;
+                left: 50%;
+                
+            }
+
+            10%,30%,51%,70%,90%{
+                transform: scale(0.7, 1.5);
+            }
+
+            20%,40%,60%,80%,100%{
+                transform: scale(1.5, 1);
+            }
+            
+            50%{
+                left: 50%;
+                top:20%;
+                
+                
+            }
+
+            100%{
+                top:-10%;
+                left:50%;
+                transform: scale(1.5, 1);
+            }
+
+        }
+
+        #pez2 {
+            position: absolute;
+            width: 5%;
+            top: 10%;
+            left: -50%;
+            z-index: 5;
+            -webkit-animation: pez2move 15s linear infinite;
+        }
+
+
+        @-webkit-keyframes pez2move {
+            0% {
+                top: 10%;
+                left: -50%;
+            }
+
+            50% {
+                left: 30%;
+                top: 60%;
+                transform: rotate(-180deg);
+            }
+
+            100% {
+                left: 30%;
+                top: -10%;
+                transform: rotate(-90deg);
+            }
+        }
+
+        #pez1 {
+            position: absolute;
+            width: 10%;
+            top: 15%;
+            left: -10%;
+            z-index: 6;
+            -webkit-animation: pez1move 15s linear infinite;
+        }
+
+
+        @-webkit-keyframes pez1move {
+            0% {
+                top: 15%;
+                left: -10%;
+            }
+            
+            48%{
+                transform: scaleX(1);
+            }
+            50% {
+                top: 15%;
+                left: 50%;
+                transform: scaleX(-1);
+            }
+
+            51%{
+                transform: scaleX(-1);
+            }
+
+
+
+            100% { 
+                top: 15%;
+                left: -10%;
+                transform: scaleX(-1);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <img id="cangrejo" src="cangrejo.gif">
+    <img id="bob-esponja" src="bob-esponja-happy.gif">
+    <img id="medusa1" src="medusa.webp">
+    <img id="medusa2" src="medusa.webp">
+    <img id="medusa3" src="medusa.webp">
+    <img id="medusa4" src="medusa.webp">
+    <img id="medusa5" src="medusa.webp">
+    <img id="patricio" src="Patricio_Estrella_de_Bob_Esponja.webp" alt="">
+    <img id="casa_piña" src="casa_piña.png" alt="">
+    <img id="pez1" src="pez.gif" alt="">
+    <img id="pez2" src="pez2.gif" alt="">
+
+</body>
+
+</html>
