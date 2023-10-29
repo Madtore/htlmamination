@@ -22,52 +22,42 @@
             top: 10%;
             left: 45%;
             z-index: 10;
-            -webkit-animation: cangrejomove 5s linear infinite;
+            
         }
 
         #cangrejo {
             position: absolute;
-            width: 10%;
-            top: 55.8%;
-            left: 46%;
+            width: 14%;
+            top: 45.8%;
+            left: 18%;
             z-index: 50;
+            transform: scaleX(-1);  
             -webkit-animation: cangrejomove 5s linear infinite;
         }
 
         #bob-esponja {
             position: absolute;
-            width: 10%;
-            top: 55.8%;
-            left: 46%;
+            width: 20%;
+            top: 45.8%;
+            left: 72%;
             z-index: 151;
-            -webkit-animation: bobmove 40s linear infinite;
+            -webkit-animation: bobmove 30s linear infinite;
         }
 
         @-webkit-keyframes bobmove {
-            0% {
-                transform: scale(1);
-            }
-
-            50%{
-               top: 65.8%;
-               transform: scale(3);
-            }
-
+        
             100% {
-                top: 75.8%;
-                transform: scale(10);
-                
-
+                left: 22%;
             }
         }
 
         #patricio {
             position: absolute;
-            width: 5%;
-            top: 55.8%;
-            left: 46%;
-            z-index: 53;
-            -webkit-animation: cangrejomove 5s linear infinite;
+            width: 8%;
+            top: 45.8%;
+            left: 15%;
+            z-index: 49;
+          
         }
 
 
@@ -99,14 +89,14 @@
             50%{
                 left: 20%;
                 top:20%;
-                
-                
+                opacity: 1;               
             }
 
             100%{
                 top:-10%;
                 left:10%;
                 transform: scale(1.5, 1);
+                opacity: 0;
             }
 
         }
@@ -141,7 +131,7 @@
             50%{
                 left: 80%;
                 top:20%;
-                
+                opacity: 1;
                 
             }
 
@@ -149,6 +139,7 @@
                 top:-10%;
                 left:80%;
                 transform: scale(1.5, 1);
+                opacity: 0;
             }
 
         }
@@ -182,7 +173,7 @@
             50%{
                 left: 80%;
                 top:20%;
-                
+                opacity: 1;
                 
             }
 
@@ -190,6 +181,7 @@
                 top:-10%;
                 left:80%;
                 transform: scale(1.5, 1);
+                opacity: 0;
             }
 
         }
@@ -222,7 +214,7 @@
             50%{
                 left: 20%;
                 top:20%;
-                
+                opacity: 1;
                 
             }
 
@@ -230,6 +222,7 @@
                 top:-10%;
                 left:10%;
                 transform: scale(1.5, 1);
+                opacity: 0;
             }
 
         }
@@ -263,7 +256,7 @@
             50%{
                 left: 50%;
                 top:20%;
-                
+                opacity: 1;
                 
             }
 
@@ -271,6 +264,7 @@
                 top:-10%;
                 left:50%;
                 transform: scale(1.5, 1);
+                opacity: 0;
             }
 
         }
@@ -290,7 +284,7 @@
             }
 
             50% {
-                top: 30%;   
+                top: 5%;   
             }
             100% {
                 top: -10%;
@@ -302,7 +296,7 @@
             position: absolute;
             width: 5%;
             top: 10%;
-            left: -60%;
+            left: -10%;
             z-index: 5;
             -webkit-animation: pez3move linear 20s infinite;
         }
@@ -313,7 +307,7 @@
             }
 
             50% {
-                top: 30%;   
+                top: 5%;   
             }
             100% {
                 top: -20%;
@@ -325,7 +319,7 @@
             position: absolute;
             width: 5%;
             top: 10%;
-            left: -60%;
+            left: -10%;
             z-index: 5;
             -webkit-animation: pez4move linear 25s infinite;
         }
@@ -336,7 +330,7 @@
             }
 
             50% {
-                top: 40%;   
+                top: 10%;   
             }
             100% {
                 top: -10%;
@@ -348,18 +342,18 @@
             position: absolute;
             width: 5%;
             top: 10%;
-            left: -40%;
+            left: -10%;
             z-index: 5;
             -webkit-animation: pez5move linear 15s infinite;
         }
 
         @-webkit-keyframes pez5move {
             0% {
-                top: 30%;      
+                top: 5%;      
             }
 
             50% {
-                top: 50%;   
+                top: 10%;   
             }
             100% {
                 top: -20%;
@@ -378,11 +372,11 @@
 
         @-webkit-keyframes pez6move {
             0% {
-                top: 40%;      
+                top: 10%;      
             }
 
             50% {
-                top: 30%;   
+                top: 10%;   
             }
             100% {
                 top: -30%;
@@ -405,7 +399,7 @@
             }
 
             50% {
-                top: 20%;   
+                top: 5%;   
             }
             100% {
                 top: -30%;
@@ -491,11 +485,15 @@
             }
 
         }
+
+
+        
     </style>
 </head>
 
 <body>
 
+   
     <img id="cangrejo" src="cangrejo.gif">
     <img id="bob-esponja" src="bob-esponja-happy.gif">
     <img id="medusa1" src="medusa.webp">
@@ -507,6 +505,7 @@
     <img id="casa_piña" src="casa_piña.png" alt="">
     <img id="pezpajaso1"  src="pez.gif">
     <img id="pezpajaso2"  src="pez.gif">
+   
     <img id="pez2"  src="pez2.gif">
     <img id="pez3"  src="pez2.gif">
     <img id="pez4"  src="pez2.gif">
